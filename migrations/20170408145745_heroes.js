@@ -4,8 +4,9 @@ exports.up = (knex, Promise) => (
     table.increments() // same as 'id' int unsigned not null auto_increment
     table.string('name').notNullable().unique()
     table.string('race').notNullable()
-    table.string('weapon').notNullable()
+    table.integer('weapon_id').notNullable()
     table.boolean('shield').notNullable()
+    table.foreign('id').references('weapon_id')
   })
 );
 
