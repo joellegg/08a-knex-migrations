@@ -5,6 +5,7 @@ exports.up = (knex, Promise) => (
     table.string('name').notNullable().unique()
     table.string('race').notNullable()
     table.string('weapon').notNullable()
+    table.boolean('shield').notNullable()
   })
 );
 

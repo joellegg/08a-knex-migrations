@@ -4,7 +4,7 @@ exports.up = (knex, Promise) => (
     table.string('name').notNullable().unique()
     table.string('type').notNullable()
     table.string('weapon').notNullable()
-    table.integer('eyes')
+    table.integer('eyes').notNullable()
   })
 );
 
