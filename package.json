@@ -1,0 +1,23 @@
+{
+  "name": "08a-knex-migrations",
+  "version": "1.0.0",
+  "description": "Create a database, fill it with useful tables, and then knock the whole thing down again.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joellegg/08a-knex-migrations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joellegg/08a-knex-migrations/issues"
+  },
+  "homepage": "https://github.com/joellegg/08a-knex-migrations#readme",
+  "dependencies": {
+    "knex": "^0.12.9",
+    "pg": "^6.1.5"
+  }
+}
