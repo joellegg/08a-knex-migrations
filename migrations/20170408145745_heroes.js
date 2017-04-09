@@ -5,8 +5,8 @@ exports.up = (knex, Promise) => (
     table.string('name').notNullable().unique()
     table.string('race').notNullable()
     table.integer('weapon_id').notNullable()
+    table.foreign('weapon_id').references('weapons')
     table.boolean('shield').notNullable()
-    table.foreign('id').references('weapon_id')
   })
 );
 
