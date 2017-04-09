@@ -4,7 +4,11 @@
   "description": "Create a database, fill it with useful tables, and then knock the whole thing down again.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "drop": "knex migrate:rollback",
+    "tables": "knex migrate:latest",
+    "seed": "knex seed:run",
+    "all": "npm run drop && npm run tables && npm run seed"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/joellegg/08a-knex-migrations#readme",
   "dependencies": {
+    "bookshelf": "^0.10.3",
     "knex": "^0.12.9",
     "pg": "^6.1.5"
   }
